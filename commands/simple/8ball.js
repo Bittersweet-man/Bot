@@ -12,7 +12,7 @@ class EightBallCommand extends Commando.Command {
 
 
     async run(message, args) {
-        var chance = Math.floor(Math.random() * 2)
+        var chance = Math.floor(Math.random() * 20)
         if (chance == 0) {
             message.channel.send("it is certain.");
         }
