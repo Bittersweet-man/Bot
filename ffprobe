@@ -1,0 +1,2 @@
+"$basedir/node_modules/ffmpeg-binaries/bin/ffprobe"   "$@"
+exit $?
