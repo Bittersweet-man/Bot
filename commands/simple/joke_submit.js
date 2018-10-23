@@ -12,7 +12,9 @@ class SubmitCommand extends Commando.Command {
 
 
     async run(message, args) {
-        message.channel.send("Hey " + message.author + " You can submit jokes here! https://docs.google.com/document/d/1sQyRty3VcOR4zKKkFH0tCkI4eqJ0IfgwtJvzKcGMfa8/edit?usp=sharing")
+        message.channel.send("Thank you for your submission!")
+        channel = '499781641154068491'
+        message.channel.send("A new joke was submitted! " + args)
     }
 
 }
