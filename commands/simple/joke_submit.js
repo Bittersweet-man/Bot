@@ -3,10 +3,10 @@ const Commando = require('discord.js-commando');
 class TimerCommand extends Commando.Command {
     constructor(client, ) {
         super(client, {
-            name: 'timer',
+            name: 'joke-submit',
             group: 'simple',
-            memberName: 'timer',
-            description: 'Set a timer for a certain amout of minutes!'
+            memberName: 'joke-submit',
+            description: 'Submit jokes to Sylveon bot!'
         });
     }
 
