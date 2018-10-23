@@ -1,5 +1,4 @@
 const Commando = require('discord.js-commando');
-const math = require('mathjs')
 const TOKEN = process.env.TOKEN;
 const commandPrefix = '?'
 const bot = new Commando.Client({
