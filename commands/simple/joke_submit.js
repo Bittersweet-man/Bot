@@ -16,7 +16,7 @@ class SubmitCommand extends Commando.Command {
 
     async run(message, args) {
         message.reply("Thank you for your submission!")
-        const channel = bot.channel.get('504128003954180107')
+        var channel = message.guild.channels.find("name", "bot-jokes");
         message.channel.send('test')
     }
 }
