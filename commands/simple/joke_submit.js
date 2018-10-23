@@ -12,7 +12,7 @@ class SubmitCommand extends Commando.Command {
 
 
     async run(message, args) {
-        messaeg.channel.send("Hey " + message.author + " You can submit jokes here! https://docs.google.com/document/d/1sQyRty3VcOR4zKKkFH0tCkI4eqJ0IfgwtJvzKcGMfa8/edit?usp=sharing")
+        message.channel.send("Hey " + message.author + " You can submit jokes here! https://docs.google.com/document/d/1sQyRty3VcOR4zKKkFH0tCkI4eqJ0IfgwtJvzKcGMfa8/edit?usp=sharing")
     }
 
 }
