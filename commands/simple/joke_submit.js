@@ -1,4 +1,7 @@
 const Commando = require('discord.js-commando');
+const bot = new Commando.Client({
+    commandPrefix: '?'
+});
 
 class SubmitCommand extends Commando.Command {
     constructor(client, ) {
