@@ -17,7 +17,7 @@ class SubmitCommand extends Commando.Command {
     async run(message, args) {
         message.reply("Yee Haw")
         var channel = message.guild.channels.find("name", "botjokes");
-        channel.send("test")
+        channel.send("A joke was just submitted! " + args)
     }
 }
 
