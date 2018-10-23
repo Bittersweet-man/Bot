@@ -1,6 +1,6 @@
 const Commando = require('discord.js-commando');
 
-class TimerCommand extends Commando.Command {
+class SubmitCommand extends Commando.Command {
     constructor(client, ) {
         super(client, {
             name: 'joke-submit',
@@ -17,4 +17,4 @@ class TimerCommand extends Commando.Command {
 
 }
 
-module.exports = TimerCommand;
+module.exports = SubmitCommand;
