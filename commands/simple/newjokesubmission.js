@@ -1,11 +1,11 @@
 const Commando = require('discord.js-commando');
 
-class SubmitCommand extends Commando.Command {
+class SendJokeCommand extends Commando.Command {
     constructor(client, ) {
         super(client, {
-            name: 'joke-submit',
+            name: 'jokesubmissionnew',
             group: 'simple',
-            memberName: 'joke-submit',
+            memberName: 'jokesubmissionnew',
             description: 'Submit jokes to Sylveon bot!'
         });
     }
@@ -18,4 +18,4 @@ class SubmitCommand extends Commando.Command {
 
 }
 
-module.exports = SubmitCommand;
+module.exports = SendJokeCommand;
