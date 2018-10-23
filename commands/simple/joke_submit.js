@@ -12,7 +12,7 @@ class SubmitCommand extends Commando.Command {
 
 
     async run(message, args) {
-        var channel = '4499781641154068491'
+        var channel = '504128003954180107'
         message.channel.send("A new joke was submitted! " + args)
         message.reply("Thank you for your submission!")
     }
