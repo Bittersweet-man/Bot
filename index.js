@@ -94,8 +94,3 @@ bot.on('message', function (message) {
         message.channel.send('HE IS BOT DADDY')
     }
 });
-bot.on('message', function (message) {
-    if (message.content.includes('please dont')) {
-        message.channel.send('please dont')
-    }
-});
