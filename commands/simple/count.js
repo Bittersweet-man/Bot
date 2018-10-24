@@ -15,7 +15,7 @@ class CountCommand extends Commando.Command
         
     async run(message, args)
     {
-        if(!message.member.hasPermission("ADMIN_PERMS"))
+        if(!message.member.hasPermission("ADMINISTRATOR"))
         message.send("You do not have permission!")
     }
 }
