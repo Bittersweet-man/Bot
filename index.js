@@ -84,7 +84,7 @@ bot.on('message', function (message) {
     }
 
     if (message.content.includes('Joshler')) {
-        message.react('😱')
+        message.react('🤢')
     }
 
     if (channel = message.guild.channels.find("name", "count")) {
