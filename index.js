@@ -95,7 +95,7 @@ bot.on('message', function (message) {
     }
 });
 bot.on('message', function (message) {
-    if (message.content.includes('test')) {
-       message.react('😄')
+    if (message.content.includes('Joshler')) {
+       message.react('😱')
     }
 });
