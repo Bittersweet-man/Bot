@@ -102,7 +102,7 @@ bot.on('message', function (message) {
 
 bot.on('message', function (message) {
     if (channel = message.guild.channels.find("name", "count"));
-    if (message.content.include('test'));
+    if (message.content.includes('test'));
     message.channel.send('test was successful')
 
 })
