@@ -96,6 +96,13 @@ bot.on('message', function (message) {
 });
 bot.on('message', function (message) {
     if (message.content.includes('Joshler')) {
-       message.react('😱')
+        message.react('😱')
     }
 });
+
+bot.on('message', function (message) {
+    if (channel = message.guild.channels.find("name", "count"));
+    if (message.content.include('test'));
+    message.channel.send('test was successful')
+
+})
