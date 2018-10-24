@@ -13,7 +13,7 @@ class CountCommand extends Commando.Command
             description: 'ADMIN ONLY'
         });
     }
-        
+
         
     async run(message, args)
     {
