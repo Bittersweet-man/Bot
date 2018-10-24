@@ -27,7 +27,7 @@ class CountDownCommand extends Commando.Command {
             message.channel.send('1')
         }, 4000);
         setTimeout(function () {
-            message.channel.send({files: [__dirname + "/explosion-pic/boom.js"]})
+            message.channel.send({files: [__dirname + "/explosion-pic/boom.jpg"]})
         }, 5000);
     }
 }
