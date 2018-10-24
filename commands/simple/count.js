@@ -22,7 +22,6 @@ class CountCommand extends Commando.Command
             var number = count
             message.channel.send(count)
         }
-        var count = 1
         message.channel.send(count)
     }
 }
