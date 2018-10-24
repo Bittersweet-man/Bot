@@ -96,6 +96,6 @@ bot.on('message', function (message) {
 });
 bot.on('message', function (message) {
     if (message.content.includes('test')) {
-       message.react(':sob:')
+       message.react(':heart_eyes:')
     }
 });
