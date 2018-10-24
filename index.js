@@ -54,53 +54,39 @@ bot.on('message', function (message) {
         var channel = bot.channels.get('500450322347589632')
         channel.send(message.author + ", Hello! Welcome to Sylveon Land, here we meme the crap out of our existence! Read #welcome-rules before typing away!")
     }
-});
 
-bot.on('message', function (message) {
     if (message.content.includes('die')) {
         message.channel.send('please dont')
     }
-});
 
-bot.on('message', function (message) {
     if (message.content.includes('sylveon')) {
         message.channel.send('**omg **' + message.author + '** what do you want now?**')
     }
-});
 
-bot.on('message', function (message) {
     if (message.content.includes('twenty one pilots')) {
         message.channel.send('they\'re emo dont @ me')
     }
-});
 
-bot.on('message', function (message) {
     if (message.content.includes('Jack')) {
         message.channel.send('HE IS BOT DADDY')
     }
-});
-bot.on('message', function (message) {
+
     if (message.content.includes('jack')) {
         message.channel.send('HE IS BOT DADDY')
     }
-});
-bot.on('message', function (message) {
+
     if (message.content.includes('bittersweet')) {
         message.channel.send('HE IS BOT DADDY')
     }
-});
-bot.on('message', function (message) {
+
     if (message.content.includes('Bittersweet')) {
         message.channel.send('HE IS BOT DADDY')
     }
-});
-bot.on('message', function (message) {
+
     if (message.content.includes('Joshler')) {
         message.react('😱')
     }
-});
 
-bot.on('message', function (message) {
     if (channel = message.guild.channels.find("name", "count")) {
         if (message.content.includes('test')) {
             message.channel.send('successful')
