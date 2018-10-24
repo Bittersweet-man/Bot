@@ -91,8 +91,5 @@ bot.on('message', function (message) {
         if (message.content.includes('test')) {
             message.channel.send('successful')
         }
-
-
-
     }
 })
