@@ -15,10 +15,13 @@ class CountCommand extends Commando.Command
         
     async run(message, args)
     {
-        if(!message.member.hasPermission("ADMINISTRATOR"))
-        message.channel.send("You do not have permission!")
+        if(!message.member.hasPermission("ADMINISTRATOR")){
+            message.channel.send("You do not have permission!")
+        }
+        if(message.member.hasPermission("ADMINISTRATOR")){
         var number = 1 
         message.channel.send(number + 1)
+        }
     }
 }
 
