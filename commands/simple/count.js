@@ -1,5 +1,7 @@
 const Commando = require('discord.js-commando');
 
+var number = 1
+
 class CountCommand extends Commando.Command
 {
     constructor(client,)
@@ -19,7 +21,6 @@ class CountCommand extends Commando.Command
             message.channel.send("You do not have permission!")
         }
         if(message.member.hasPermission("ADMINISTRATOR")){
-            var number = 1
             number++
         message.channel.send(number)
         }
