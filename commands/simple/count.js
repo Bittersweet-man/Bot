@@ -20,8 +20,8 @@ class CountCommand extends Commando.Command
         }
         if(message.member.hasPermission("ADMINISTRATOR")){
             var number = 1
+            number++
         message.channel.send(number)
-       number++
         }
     }
 }
