@@ -27,7 +27,7 @@ class CountDownCommand extends Commando.Command {
             message.channel.send('1')
         }, 4000);
         setTimeout(function () {
-            message.channel.send('https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Operation_Upshot-Knothole_-_Badger_001.jpg/250px-Operation_Upshot-Knothole_-_Badger_001.jpg')
+            message.channel.send({files: [__dirname + "/explosion-pic/boom.js"]})
         }, 5000);
     }
 }
