@@ -18,7 +18,6 @@ class CountCommand extends Commando.Command
         if(!message.member.hasPermission("ADMINISTRATOR"))
         message.channel.send("You do not have permission!")
         var number = 1 
-        number + 1
         message.channel.send(number + 1)
     }
 }
