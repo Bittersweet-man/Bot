@@ -21,7 +21,7 @@ class CountCommand extends Commando.Command
         if(message.member.hasPermission("ADMINISTRATOR")){
             var number = 1
         message.channel.send(number)
-       variable++
+       number++
         }
     }
 }
