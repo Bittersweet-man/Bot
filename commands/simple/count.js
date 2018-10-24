@@ -17,7 +17,7 @@ class CountCommand extends Commando.Command
     {
         if(!message.member.hasPermission("ADMIN_PERMS"))
         messaeg.send("You do not have permission!")
-        var count = 37
+        var count =  (1 * 2)
         message.channel.send(count)
     }
 }
