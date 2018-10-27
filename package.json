@@ -6,7 +6,7 @@
   "dependencies": {
     "discord.js": "^11.4.2",
     "discord.js-commando": "^0.10.0",
-    "node.js": "^10.12.0",
+    "node": "^10.12.0",
     "npm": "^6.4.1"
   },
   "devDependencies": {},
