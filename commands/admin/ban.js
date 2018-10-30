@@ -40,4 +40,4 @@ class BanCommand extends Commando.Command {
 
 
 
-module.exports = KickCommand;
+module.exports = BanCommand;
