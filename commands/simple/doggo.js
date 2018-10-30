@@ -12,9 +12,10 @@ class DoggoCommand extends Commando.Command {
 
 
     async run(message, args) {
-        message.channel.send(`https://random.dog/woof.json`)
-        let test = 'https://random.dog/woof.json'
-        message.reply(test)
+        let doggo = await promise
+            .get(`https://random.dog/woof.json`)
+        let promise = resolve
+        message.channel.send(doggo)
 
     }
 }
