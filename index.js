@@ -6,7 +6,7 @@ const bot = new Commando.Client({
 });
 var prefix = commandPrefix
 const discord = require('discord.js');
-
+var number = 1;
 
 bot.registry.registerGroup('simple', 'Simple');
 bot.registry.registerGroup('music', 'Music');
