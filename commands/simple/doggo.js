@@ -12,7 +12,7 @@ class DoggoCommand extends Commando.Command {
 
 
     async run(message, args) {
-        message.channel.send(body.url)
+        message.channel.send(`https://random.dog/woof.json`)
     }
 }
 
