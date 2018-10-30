@@ -1,23 +1,20 @@
 const Commando = require('discord.js-commando');
 
-class DoggoCommand extends Commando.Command
-{
-    constructor(client,)
-        {
-        super(client,{
+class DoggoCommand extends Commando.Command {
+    constructor(client, ) {
+        super(client, {
             name: 'doggo',
             group: 'simple',
             memberName: 'doggo',
             description: 'doggo'
         });
     }
-        
-        
-    async run(message, args)
-    {
-        let{body} = await message
-        .get(`https://random.dog/woof.json`)
-       message.channel.send(body.url)
+
+
+    async run(message, args) {
+        let (body) =
+        get(`https://random.dog/woof.json`)
+        message.channel.send(body.url)
     }
 }
 
