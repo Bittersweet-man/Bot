@@ -45,7 +45,7 @@ bot.on('message', function (message) {
     if (message.content == commandPrefix + 'hello') {
         message.channel.send('Hello ' + message.author + ', how are you?');
     }
-    if(message.content == count){
+    if (message.content == 'count'){
     if(!message.member.hasPermission("ADMINISTRATOR")){
         message.channel.send("You do not have permission!")
     }
