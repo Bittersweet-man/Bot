@@ -53,6 +53,7 @@ bot.on('message', function (message) {
         number++
     message.channel.send(number)
     message.channel.send('count')
+    message.delete()
     }}
     if (message.content == "Join") {
         message.member.send("Welcome to the server!");
