@@ -1,5 +1,4 @@
 const Commando = require('discord.js-commando');
-import * as superAgent from 'superagent'
 
 class DoggoCommand extends Commando.Command
 {
@@ -16,7 +15,7 @@ class DoggoCommand extends Commando.Command
         
     async run(message, args)
     {
-        let{body} = await superAgent
+        let{body} = await message
         .get(`https://random.dog/woof.json`)
        message.channel.send(body.url)
     }
