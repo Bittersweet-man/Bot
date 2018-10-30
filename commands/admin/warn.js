@@ -3,21 +3,21 @@ const discord = require('discord.js');
 const bot = new Commando.Client({
     commandPrefix: '?'
 });
-class KickCommand extends Commando.Command {
+class WarnCommand extends Commando.Command {
     constructor(client, ) {
         super(client, {
-            name: 'kick',
+            name: 'warn',
             group: 'admin',
-            memberName: 'kick',
-            description: 'Kicks a user'
+            memberName: 'warn',
+            description: 'warn a user'
         });
     }
 
 
     async run(message, args) {
-        let kickedUser = message.guild.member(message.mentions.users.first());
+        let warnedUser = message.guild.member(message.mentions.users.first());
         console.log(kickedUser)
-        if (!kickedUser) {
+        if (!warnedUser) {
             message.channel.send("Sorry, I cound't find that person");
             return;
         }
@@ -25,12 +25,8 @@ class KickCommand extends Commando.Command {
             message.channel.send("You don't have permissions to use this command!");
             return;
         }
-        let words = args.split(' ');
-        let reason = words.slice(1).join(' ');
-        message.guild.member(kickedUser).kick(reason)
-        message.reply("Yee Haw")
         var channel = message.guild.channels.find("name", "modlogs");
-        channel.send("A user was just kicked! Kicked User " + kickedUser + " Kicked By " + message.author)
+        channel.send("A user was just warned! Warned User " + warnedUser + " warned By " + message.author)
 
 
 
@@ -40,4 +36,4 @@ class KickCommand extends Commando.Command {
 
 
 
-module.exports = KickCommand;
+module.exports = WarnCommand;
