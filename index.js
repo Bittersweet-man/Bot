@@ -29,8 +29,6 @@ bot.on('ready', () => {
 });
 
 
-
-
 bot.on("guildMemberAdd", function (member) {
     member.send("Hello! Welcome to sylveon land, here we meme the crap out of our existence! Read #welcome-rules before typing away!");
     let memberRole = member.guild.roles.find("name", "Newcomer");
@@ -87,5 +85,5 @@ bot.on('message', function (message) {
         message.react('🤢')
     }
 
-   
+
 })
