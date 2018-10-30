@@ -23,7 +23,6 @@ class CountCommand extends Commando.Command
         if(message.member.hasPermission("ADMINISTRATOR")){
             number++
         message.channel.send(number)
-        message.channel.send('count')
         }
     }
 }
