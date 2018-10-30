@@ -57,9 +57,6 @@ bot.on('message', function (message) {
         message.channel.send('please dont')
     }
 
-    if (message.content.includes('sylveon')) {
-        message.channel.send('**omg **' + message.author + '** what do you want now?**')
-    }
 
     if (message.content.includes('twenty one pilots')) {
         message.channel.send('they\'re emo dont @ me')
