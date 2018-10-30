@@ -6,7 +6,7 @@ const bot = new Commando.Client({
 });
 var prefix = commandPrefix
 const discord = require('discord.js');
-var number = 1
+var number = 2
 
 bot.registry.registerGroup('simple', 'Simple');
 bot.registry.registerGroup('music', 'Music');
@@ -52,7 +52,7 @@ bot.on('message', function (message) {
     if(message.member.hasPermission("ADMINISTRATOR")){
         number++
     message.channel.send(number)
-    message.channel.send('?count')
+    message.channel.send('count')
     }}
     if (message.content == "Join") {
         message.member.send("Welcome to the server!");
