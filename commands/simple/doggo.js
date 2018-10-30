@@ -1,4 +1,5 @@
 const Commando = require('discord.js-commando');
+import * as superAgent from 'superagent'
 
 class DoggoCommand extends Commando.Command
 {
