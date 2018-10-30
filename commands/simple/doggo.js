@@ -19,4 +19,4 @@ class DoggoCommand extends Commando.Command
     }
 }
 
-module.exports = CoinFlipCommand;
+module.exports = DoggoCommand;
