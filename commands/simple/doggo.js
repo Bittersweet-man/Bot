@@ -12,8 +12,6 @@ class DoggoCommand extends Commando.Command {
 
 
     async run(message, args) {
-        let (body) =
-        get(`https://random.dog/woof.json`)
         message.channel.send(body.url)
     }
 }
