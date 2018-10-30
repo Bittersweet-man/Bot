@@ -12,6 +12,7 @@ class PurgeCommand extends Commando.Command {
 
 
     async run(message, args) {
+        var channel = message.channel
         if (!message.member.hasPermission("ADMINISTRATOR")) {
             message.channel.send("You don't have permissions to use this command!");
             return;
