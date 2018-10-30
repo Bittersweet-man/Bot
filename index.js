@@ -45,6 +45,15 @@ bot.on('message', function (message) {
     if (message.content == commandPrefix + 'hello') {
         message.channel.send('Hello ' + message.author + ', how are you?');
     }
+    if(message.content == count){
+    if(!message.member.hasPermission("ADMINISTRATOR")){
+        message.channel.send("You do not have permission!")
+    }
+    if(message.member.hasPermission("ADMINISTRATOR")){
+        number++
+    message.channel.send(number)
+    message.channel.send('?count')
+    }}
     if (message.content == "Join") {
         message.member.send("Welcome to the server!");
         let memberRole = message.member.guild.roles.find("name", "Newcomer");
