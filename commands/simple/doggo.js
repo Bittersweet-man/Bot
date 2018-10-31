@@ -13,7 +13,7 @@ class DoggoCommand extends Commando.Command {
 
     async run(message, args) {
         let promise = 'resolve'
-        let doggo = await URL
+        let doggo = await superAwait
             .get(`https://random.dog/woof.json`)
         message.channel.send(doggo)
 
