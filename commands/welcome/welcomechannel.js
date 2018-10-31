@@ -21,7 +21,7 @@ class WelcomeChannelCommand extends Commando.Command {
         }
         const welcomeChannel = args
         message.channel.send('You set the welcome channel to ' + welcomeChannel)
-        });
+        ;
         
     }
 }
