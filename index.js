@@ -74,8 +74,11 @@ bot.on('message', function (message) {
     if (message.content.includes('Joshler')) {
         message.react('🤢')
     }
-    if (message.content == 'shut up')
-    message.channel.send("no")
-
+    if (message.content == 'shut up'){
+        message.channel.send("no")
+    }
+    if (message.content == 'welcome channel'){
+    message.channel.send(welcomeChannel)
+    }
 
 })
