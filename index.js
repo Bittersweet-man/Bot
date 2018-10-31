@@ -12,6 +12,7 @@ bot.registry.registerGroup('simple', 'Simple');
 bot.registry.registerGroup('music', 'Music');
 bot.registry.registerGroup('admin', 'Admin');
 bot.registry.registerGroup('math', 'Math');
+bot.registry.registerGroup('welcome', 'welcome');
 bot.registry.registerDefaults();
 bot.registry.registerCommandsIn(__dirname + '/commands');
 
