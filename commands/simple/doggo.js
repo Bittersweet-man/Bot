@@ -13,9 +13,9 @@ class DoggoCommand extends Commando.Command {
 
     async run(message, args) {
         let promise = 'resolve'
-        let doggo = await superAwait
+        let dog = await superAwait
             .get(`https://random.dog/woof.json`)
-        message.channel.send(doggo)
+        message.channel.send(dog)
 
     }
 }
