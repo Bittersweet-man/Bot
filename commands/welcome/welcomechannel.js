@@ -21,11 +21,6 @@ class WelcomeChannelCommand extends Commando.Command {
         }
         const welcomeChannel = args
         message.channel.send('You set the welcome channel to ' + welcomeChannel)
-
-        var channel = welcomeChannel
-        bot.on("guildMemberAdd", function (member) {
-            message.channel.send(member + " this is a test")
-        
         });
         
     }
