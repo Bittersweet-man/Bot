@@ -19,7 +19,7 @@ class WelcomeChannelCommand extends Commando.Command {
             message.channel.send("You don't have permissions to use this command!");
             return;
         }
-        var welcomeChannel = args
+        const welcomeChannel = args
         message.channel.send('You set the welcome channel to ' + welcomeChannel)
     }
 }
