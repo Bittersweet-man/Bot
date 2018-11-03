@@ -1,7 +1,7 @@
 const Commando = require('discord.js-commando');
 const TOKEN = process.env.TOKEN;
 const commandPrefix = '?'
-const bot = new Commando.Client({commandPrefix: "/", owner: "462709446121095169"})
+const bot = new Commando.Client({commandPrefix: "/", owner: "462709446121095169", owner: "413754421365964800"})
 
 var prefix = commandPrefix
 const discord = require('discord.js');
