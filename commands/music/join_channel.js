@@ -1,38 +1,37 @@
-const Commando = require('discord.js-commando');
-const YTDL = require('discord.js');
+const commando = require('discord.js-commando');
+const YTDL = require('ytdl-core');
+
 function Play(connection, message)
 {
     var server = servers[message.guild.id];
-    server.dispatcher = connection.playStream(YTDL(server.queue[0], {filter: "audioonly"}));
+    server.dipatcher = connection.playStream(YTDL(server.queue[0], {filter: "audioonly"}));
     server.queue.shift();
-    server.dispatcher.on("end", function (){
+    server.dipatcher.on("end", function(){
         if(server.queue[0])
         {
-            Play(connection, message);
+            Play(connection,message);
         }
         else
         {
             connection.disconnect();
         }
-    })
+    });
 }
 
-class JoinChannelCommand extends Commando.Command
+class JoinChannelCommand extends commando.Command
 {
-    constructor(client,)
-        {
+    constructor(client)
+    {
         super(client,{
             name: 'join',
             group: 'music',
             memberName: 'join',
-            description: 'Joins the voice channel of the commander'
+            description: 'Join the voice channel the commander is currently in. Then if u want to play music, you can just copy and paste the link onto the end of the command and it will play your music!'
         });
     }
-        
-        
+
     async run(message, args)
     {
-         console.log(args)
         if(message.member.voiceChannel)
         {
             if(!message.guild.voiceConnection)
@@ -42,20 +41,19 @@ class JoinChannelCommand extends Commando.Command
                     servers[message.guild.id] = {queue: []}
                 }
                 message.member.voiceChannel.join()
-                     .then(connection =>{
-                         var server = servers[message.guild.id];
-                         message.reply("Successfully Joined!");
+                    .then(connection =>{
+                        var server = servers[message.guild.id];
+                        message.reply("Succesfully Joined!");
                         server.queue.push(args);
-                         Play(connection, message)
-                         console.log(args)
-                     })
+                        Play(connection, message);
+                    })
             }
         }
-         else
-         {
-             message.reply("You must be in a voice channel first!")
-         }
-    }            
+        else
+        {
+            message.reply("You must be in a Voice Channel to summon me!");
+        }
+    }
 }
 
 module.exports = JoinChannelCommand;
