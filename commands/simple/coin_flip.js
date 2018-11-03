@@ -2,7 +2,7 @@ const Commando = require('discord.js-commando');
 
 class CoinFlipCommand extends Commando.Command
 {
-    constructor(client,)
+    constructor(client)
         {
         super(client,{
             name: 'flip',
