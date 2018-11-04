@@ -81,7 +81,7 @@ bot.on('message', function (message) {
     if (message.content == 'welcome channel'){
     message.channel.send(welcomeChannel)
     }
-    if(message.cont == 'queue'){
+    if(message.content == 'queue'){
         message.channel.send(playQueue)
     }
 
