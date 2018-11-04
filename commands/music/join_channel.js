@@ -40,6 +40,7 @@ class JoinChannelCommand extends commando.Command {
                         message.reply("Succesfully Joined!");
                         server.queue.push(args);
                         Play(connection, message);
+                        message.channel.send(server.queue)
                     })
             }
         } else {
