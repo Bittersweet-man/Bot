@@ -2,6 +2,7 @@ const Commando = require('discord.js-commando');
 const TOKEN = process.env.TOKEN;
 const commandPrefix = '?'
 const bot = new Commando.Client({commandPrefix: "/", owner: "462709446121095169", owner: "413754421365964800"})
+const ytdl = require('ytdl-core');
 
 var prefix = commandPrefix
 const discord = require('discord.js');
@@ -18,6 +19,7 @@ bot.registry.registerCommandsIn(__dirname + '/commands');
 bot.login(TOKEN);
 
 global.servers = {};
+var playQueue = [];
 
 bot.on('ready', () => {
     console.log("Ready");
