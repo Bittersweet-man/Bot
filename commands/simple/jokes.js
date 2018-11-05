@@ -69,10 +69,16 @@ class JokesCommands extends Commando.Command {
         if (chance == 17) {
             message.reply("knees knees the magical joint. the more you crack the more you heighten your chances of getting arthritis");
         }
-        if(chance == 18) { 
-            message.reply("lol")};
-        if(chance == 19) 
-        { message.reply("Glaceon")};
+        if (chance == 18) {
+            message.reply("lol")
+        };
+        if (chance == 19) {
+            message.reply("Glaceon")
+        };
+        if (chance == 20) {
+            messaeg.channel.send(message.author)
+        }
+
     }
 }
 module.exports = JokesCommands;
