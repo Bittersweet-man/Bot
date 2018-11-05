@@ -12,7 +12,7 @@ class JokesCommands extends Commando.Command {
 
 
     async run(message, args) {
-        var chance = Math.floor(Math.random() * 18)
+        var chance = Math.floor(Math.random() * 20)
         if (chance == 0) {
             message.reply("Why did the chicken cross the road?");
             message.reply("To get to the other side!");
@@ -69,6 +69,10 @@ class JokesCommands extends Commando.Command {
         if (chance == 17) {
             message.reply("knees knees the magical joint. the more you crack the more you heighten your chances of getting arthritis");
         }
+        if(chance == 18) { 
+            message.reply("lol")};
+        if(chance == 19) 
+        { message.reply("Glaceon")};
     }
 }
 module.exports = JokesCommands;
