@@ -12,7 +12,7 @@ class JokesCommands extends Commando.Command {
 
 
     async run(message, args) {
-        var chance = Math.floor(Math.random() * 20)
+        var chance = Math.floor(Math.random() * 21)
         if (chance == 0) {
             message.reply("Why did the chicken cross the road?");
             message.reply("To get to the other side!");
