@@ -1,7 +1,7 @@
 const Commando = require('discord.js-commando');
 const discord = require('discord.js');
 const bot = new Commando.Client({
-    commandPrefix: '?'
+    commandPrefix: '/'
 });
 class WelcomeChannelCommand extends Commando.Command {
     constructor(client, ) {
