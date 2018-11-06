@@ -16,7 +16,7 @@ class ExplodeCommand extends Commando.Command {
       const msgs = await message.channel.awaitMessages(msg => { 
         console.log(msg.content) ;
         return msg.content;
-        if(message.content.includes.toLowerCase('yes'))
+        if(message.content.includes('yes'))
         message.channel.send('I have gone kaplewy')
       }, {time: 5000});
     }
