@@ -14,9 +14,9 @@ class ExplodeCommand extends Commando.Command {
     async run(message, args) {
         message.channel.send('Are you sure you want to make me explode?')
         const msgs = await message.channel.awaitMessages(msg => {
-
-            message.channel.send('I have gone kaplewy')
-
+            if (message.content = 'yes') {
+                message.channel.send('I have gone kaplewy')
+            }
             console.log(msg.content);
             return msg.content;
         }, {
