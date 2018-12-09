@@ -52,10 +52,7 @@ bot.on('message', function (message) {
     }
 
 
-    if (message.content.includes('twenty one pilots')) {
-        message.channel.send('they\'re emo dont @ me')
-    }
-
+   
     if (message.content.includes('Jack')) {
         message.channel.send('HE IS BOT DADDY')
     }
