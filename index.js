@@ -46,40 +46,4 @@ bot.on('message', function (message) {
         var channel = bot.channels.get('500450322347589632')
         channel.send(message.author + ", Hello! Welcome to Sylveon Land, here we meme the crap out of our existence! Read #welcome-rules before typing away!")
     }
-
-    if (message.content.includes('die')) {
-        message.channel.send('please dont')
-    }
-
-
-   
-    if (message.content.includes('Jack')) {
-        message.channel.send('HE IS BOT DADDY')
-    }
-
-    if (message.content.includes('jack')) {
-        message.channel.send('HE IS BOT DADDY')
-    }
-
-    if (message.content.includes('bittersweet')) {
-        message.channel.send('HE IS BOT DADDY')
-    }
-
-    if (message.content.includes('Bittersweet')) {
-        message.channel.send('HE IS BOT DADDY')
-    }
-
-    if (message.content.includes('Joshler')) {
-        message.react('🤢')
-    }
-    if (message.content == 'shut up'){
-        message.channel.send("no")
-    }
-    if (message.content == 'welcome channel'){
-    message.channel.send(welcomeChannel)
-    }
-    if(message.content == 'queue'){
-        message.channel.send(playQueue)
-    }
-
 })
